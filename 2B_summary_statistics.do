@@ -12,6 +12,9 @@ else if "`c(username)'" == "jackzhou" {
 else if "`c(username)'" == "davidcai" {
 	global dir "/Users/davidcai/Dropbox" 
 }
+else if "`c(username)'" == "jason" {
+	global dir "/Users/jason/Dropbox/Research" 
+}
 
     
 cd "$dir/Equity vs. Enterprise"
@@ -31,6 +34,8 @@ use "$datadir/1D_labeled_dataset", clear
 //=============================================================================================
 // Table 1: Industry Denom Frequency Table
 //============================================================================================= 
+
+ssc install estout
 
 eststo clear
 	eststo I5: estpost tabulate v_numerator if SIC_Industry == 5

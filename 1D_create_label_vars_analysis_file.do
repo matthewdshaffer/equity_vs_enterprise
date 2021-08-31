@@ -18,6 +18,9 @@ else if "`c(username)'" == "KSBruere" {
 else if "`c(username)'" == "willy" {
 	global dir "C:\Users\willy\Dropbox"
 }
+else if "`c(username)'" == "jason" {
+	global dir "/Users/jason/Dropbox/Research" 
+}
     
 cd "$dir/Equity vs. Enterprise"           
 global datadir "Data"                       
